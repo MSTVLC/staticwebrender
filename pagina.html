@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="pagina.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./juego/index.html">Play Game</a></li>
+                  
+                    <li> <a href="./juego/index.html"><i class="fa-solid fa-dice"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        
+        
+        <div class="contenido">
+            <div class="cd1">
+                
+                <input type="button" value="darkmode" name="" class="modo" id="darkmode">
+            <div class="btnAni">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="index.html">Home Page</a>
+            </div>
+
+            
+
+            <div class="fire"> <video src="Fireball_2_2kres.mp4"  autoplay="true" controls></video></div>
+        </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <ul>
+                    <li>Valencia España</li>
+                    <li>Copy Right 2025</li>
+                </ul>
+            </footer>
+
+        </div>
+    </div>
+</body>
+<script>
+    let root = document.querySelector(":root");
+    let boton = document.getElementsByClassName("modo")[0];
+    boton.addEventListener('click', () => {
+        root.classList.toggle('dark');
+    })
+</script>
+
+</html>

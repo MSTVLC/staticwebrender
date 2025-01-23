@@ -1,0 +1,101 @@
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+$custom-colors:(
+
+'lightOrange':rgb(218, 173, 122),
+'lightBlue' :rgb(202, 202, 245),
+'extraLightBlue':rgb(235, 235, 235)
+
+);
+
+
+$theme-colors:map-merge($theme-colors , $custom-colors) ;
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+     
+  }
+  #help:hover{
+cursor:help;
+  }
+ 
+  h1 span{
+    color: red;
+    text-shadow: none;
+  }
+  h1:not(span){
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 3.2rem;
+    text-shadow: rgb(78, 63, 63) 1px 5px 5px  ;
+  }
+  
+ 
+  main .ulwithbgblue{
+    background-color: rgb(205, 205, 238);
+   
+  }
+  
+  main i{
+  
+  color: blue;
+  font-size: 36px;
+  }
+  
+  p span{
+    text-shadow: yellow 2px 2px 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #tm{
+    font-size: 15px;
+    position: absolute;
+    
+  
+    color: #0d6efd;
+  }
+
+ 
+  .col-4{
+    height: 51%;
+  }
+ 
+
+
+  /* Provided by bootstarp doc*/
+/*   @mixin color-scheme($name) {
+    @media (prefers-color-scheme: #{$name}) {
+      @content;
+    }
+  }
+
+  .custom-element {
+    @include color-scheme(light) {
+      // Insert light mode styles here
+      
+    }
+  
+    @include color-scheme(dark) {
+      // Insert dark mode styles here
+    }
+  } */
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
